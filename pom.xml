@@ -6,7 +6,7 @@
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>1.5.10.RELEASE</version>
 	</parent>
-	<artifactId>cm-ms-assists</artifactId>
+	<artifactId>cm-assists</artifactId>
 	<version>0.0.2-SNAPSHOT</version>
 	
 	<repositories>

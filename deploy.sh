@@ -1,6 +1,6 @@
 #!/bin/sh
 
-app_name=microservice-assist
+app_name=cm-assists
 docker_registry=docker.craftsmen.org.cn
 user=admin
 password=jr2015
