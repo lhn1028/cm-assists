@@ -1,0 +1,34 @@
+ 
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+      hbm2ddl:
+        auto: none
+#  data:
+#    mongodb:
+#      host: 139.196.22.166
+#      port: 27017
+#      username: root
+#      password: jr2015
+#      database: assists
+#      authenticationDatabase: admin
+      
+logging:
+  level:
+    root: INFO
+
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${server.port}
+    prefer-ip-address: true
+    lease-expiration-duration-in-seconds: 5
+    lease-renewal-interval-in-seconds: 5
+  client:
+    register-with-eureka: false
+    serviceUrl:
+      defaultZone: http://registry.ms.ddkm18.com/eureka/

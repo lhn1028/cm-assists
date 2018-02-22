@@ -1,0 +1,48 @@
+application:
+  data:
+    bonecp:
+      driverClass: com.mysql.jdbc.Driver
+      url: jdbc:mysql://mysql:3306/assists?useUnicode=yes&characterEncoding=UTF-8
+      username: root
+      password: jr2015
+      idleMaxAgeInMinutes: 240
+      idleConnectionTestPeriodInMinutes: 60
+      maxConnectionsPerPartition: 10
+      minConnectionsPerPartition: 1
+      partitionCount: 2
+      acquireIncrement: 5
+      statementsCacheSize: 100
+    mongo:
+      host: mongo
+      port: 27017
+      username: root
+      password: jr2015
+      database: assists
+      authenticationDatabase: admin
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+      hbm2ddl:
+        auto: update
+        
+logging:
+  level:
+    root: INFO
+    
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${server.port}
+    prefer-ip-address: true
+    health-check-url: http://microservice-assist
+    lease-expiration-duration-in-seconds: 5
+    lease-renewal-interval-in-seconds: 5
+  client:
+    healthcheck: true
+    serviceUrl:
+      defaultZone: http://microservice-registry:8761/eureka/
