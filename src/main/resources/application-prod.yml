@@ -39,7 +39,7 @@ eureka:
   instance:
     instance-id: ${spring.application.name}:${server.port}
     prefer-ip-address: true
-    health-check-url: http://microservice-assist
+    health-check-url: http://cm-assists/info
     lease-expiration-duration-in-seconds: 5
     lease-renewal-interval-in-seconds: 5
   client:
