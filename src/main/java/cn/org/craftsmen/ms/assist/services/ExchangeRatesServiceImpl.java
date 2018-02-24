@@ -3,6 +3,8 @@ package cn.org.craftsmen.ms.assist.services;
 import java.util.Currency;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import cn.org.craftsmen.ms.assist.api.ExchangeRatesReaper;
 import cn.org.craftsmen.ms.assist.domain.ExchangeRates;
 import cn.org.craftsmen.ms.assist.exceptions.ExchangeRateConversionException;
 import cn.org.craftsmen.ms.assist.repositories.ExchangeRatesRepository;
@@ -11,10 +13,12 @@ import cn.org.craftsmen.ms.assist.repositories.ExchangeRatesRepository;
 class ExchangeRatesServiceImpl implements ExchangeRatesService {
 	
 	private ExchangeRatesRepository exchangeRatesRepository;
+	private ExchangeRatesReaper exchangeRatesReaper;
 	
 	@Autowired
-	public ExchangeRatesServiceImpl(ExchangeRatesRepository exchangeRatesRepository) {
+	public ExchangeRatesServiceImpl(ExchangeRatesRepository exchangeRatesRepository, ExchangeRatesReaper exchangeRatesReaper) {
 		this.exchangeRatesRepository = exchangeRatesRepository;
+		this.exchangeRatesReaper = exchangeRatesReaper;
 	}
 
 	@Override
@@ -43,6 +47,12 @@ class ExchangeRatesServiceImpl implements ExchangeRatesService {
 			throw new ExchangeRateConversionException(500, "Exchange rate conversion error", e);
 		}
 		
+	}
+
+	@Override
+	public void update() {
+		ExchangeRates exchangeRates = exchangeRatesReaper.reap();
+		exchangeRatesRepository.saveExchangeRates(exchangeRates);
 	}
 
 }

@@ -13,4 +13,9 @@ public interface ExchangeRatesService {
 	 * @throws ExchangeRateConversionException When convert error, or from/to currency is not supported
 	 */
 	double convert(double amount, Currency from, Currency to);
+
+	/***
+	 * Manual update exchange rates
+	 */
+	void update();
 }

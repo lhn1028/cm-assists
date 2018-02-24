@@ -4,6 +4,7 @@ import java.util.Currency;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import cn.org.craftsmen.ms.assist.exceptions.BadRequestException;
 import cn.org.craftsmen.ms.assist.services.ExchangeRatesService;
@@ -44,5 +45,10 @@ public class ExchangeRatesController {
 			throw new BadRequestException(HttpStatus.BAD_REQUEST.value(), "invalid_currency", "Invalid currency symbol - please try again, or contact support@craftsmen.org.cn");
 		} 
 		
+	}
+	
+	@RequestMapping(value= {"/update"}, method=RequestMethod.GET)
+	public void update() {
+		exchangeRatesService.update();
 	}
 }
