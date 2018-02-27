@@ -61,7 +61,7 @@ public class DatabaseConfig {
 	@Bean
 	public IMongodConfig mongodConfig() throws UnknownHostException, IOException {
 		IMongodConfig mongodConfig = new MongodConfigBuilder()
-				.version(Versions.withFeatures(new GenericVersion("3.4"), Feature.SYNC_DELAY))
+				.version(Versions.withFeatures(new GenericVersion("3.4.0"), Feature.SYNC_DELAY))
 				.net(new Net(InetAddress.getLoopbackAddress().getHostAddress(), Network.getFreeServerPort(),
 						Network.localhostIsIPv6()))
 				.build();
