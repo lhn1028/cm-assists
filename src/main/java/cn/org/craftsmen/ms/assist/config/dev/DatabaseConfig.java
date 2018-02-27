@@ -24,6 +24,7 @@ import de.flapdoodle.embed.mongo.config.RuntimeConfigBuilder;
 import de.flapdoodle.embed.mongo.distribution.Feature;
 import de.flapdoodle.embed.mongo.distribution.Versions;
 import de.flapdoodle.embed.process.config.IRuntimeConfig;
+import de.flapdoodle.embed.process.config.store.HttpProxyFactory;
 import de.flapdoodle.embed.process.distribution.GenericVersion;
 import de.flapdoodle.embed.process.runtime.Network;
 
@@ -46,8 +47,14 @@ public class DatabaseConfig {
 
 		@SuppressWarnings("deprecation")
 		IRuntimeConfig runtimeConfig = new RuntimeConfigBuilder().defaults(command)
-				.artifactStore(new ExtractedArtifactStoreBuilder().defaults(command)
-						.download(new DownloadConfigBuilder().defaultsForCommand(command).downloadPath(DOWNLOAD_URL)))
+//				.artifactStore(new ExtractedArtifactStoreBuilder().defaults(command)
+//						.download(new DownloadConfigBuilder().defaultsForCommand(command).downloadPath(DOWNLOAD_URL)))
+				.artifactStore(new ExtractedArtifactStoreBuilder()
+						.defaults(command)
+						.download(new DownloadConfigBuilder()
+								.defaultsForCommand(command)
+								.proxyFactory(new HttpProxyFactory("201.200.200.20", 8580)))
+						)
 				.build();
 
 		return runtimeConfig;
