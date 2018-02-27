@@ -53,7 +53,7 @@ public class DatabaseConfig {
 						.defaults(command)
 						.download(new DownloadConfigBuilder()
 								.defaultsForCommand(command)
-								.proxyFactory(new HttpProxyFactory("201.200.200.20", 8580)))
+								.proxyFactory(new HttpProxyFactory("201.200.200.209", 8580)))
 						)
 				.build();
 
