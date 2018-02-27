@@ -1,4 +1,4 @@
-CREATE TABLE `java_locale` (
+CREATE TABLE IF NOT EXISTS `java_locale` (
   `id` bigint(20) NOT NULL,
   `language` varchar(255) DEFAULT NULL,
   `country` varchar(255) DEFAULT NULL,
@@ -7,7 +7,7 @@ CREATE TABLE `java_locale` (
   PRIMARY KEY (`id`)
 );
 
-CREATE TABLE `language_code_baidu` (
+CREATE TABLE IF NOT EXISTS `language_code_baidu` (
   `id` int(10) unsigned NOT NULL,
   `code` varchar(45) NOT NULL,
   `display_name` varchar(45) DEFAULT NULL,
