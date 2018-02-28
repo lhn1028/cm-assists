@@ -1,16 +1,24 @@
-package cn.org.craftsmen.ms.assist.config.dev;
+package cn.org.craftsmen.ms.assist.config.test;
 
 import java.io.IOException;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
+
 import javax.sql.DataSource;
+
+import org.springframework.boot.test.web.client.MockServerRestTemplateCustomizer;
+import org.springframework.boot.web.client.RestTemplateBuilder;
+import org.springframework.boot.web.client.RestTemplateCustomizer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseBuilder;
 import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType;
+import org.springframework.web.client.RestTemplate;
+
 import com.mongodb.MongoClient;
+
 import de.flapdoodle.embed.mongo.Command;
 import de.flapdoodle.embed.mongo.MongodExecutable;
 import de.flapdoodle.embed.mongo.MongodProcess;
@@ -28,10 +36,21 @@ import de.flapdoodle.embed.process.config.store.HttpProxyFactory;
 import de.flapdoodle.embed.process.distribution.GenericVersion;
 import de.flapdoodle.embed.process.runtime.Network;
 
-@Profile("dev")
+@Profile("test")
 @Configuration
-public class DatabaseConfig {
-
+public class TestDatabaseConfig {
+	
+	@Bean
+	public RestTemplateBuilder restTemplateBuilder() {
+		RestTemplateCustomizer rtc = new MockServerRestTemplateCustomizer();
+		return new RestTemplateBuilder(rtc);
+	}
+	
+	@Bean
+	public RestTemplate restTemplate(RestTemplateBuilder builder) {
+		return builder.build();
+	}
+	
 	@Bean
 	public DataSource embeddedDataSource() {
 		return new EmbeddedDatabaseBuilder().setType(EmbeddedDatabaseType.H2).setName("assists")

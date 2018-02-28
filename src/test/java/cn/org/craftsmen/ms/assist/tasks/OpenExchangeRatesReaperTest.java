@@ -7,12 +7,14 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import cn.org.craftsmen.ms.assist.AssistApplication;
 import cn.org.craftsmen.ms.assist.api.ExchangeRatesReaper;
 import cn.org.craftsmen.ms.assist.domain.ExchangeRates;
 
+@ActiveProfiles("test")
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringBootTest(classes = { AssistApplication.class })
 public class OpenExchangeRatesReaperTest {
