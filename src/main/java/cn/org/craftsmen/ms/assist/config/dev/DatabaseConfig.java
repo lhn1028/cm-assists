@@ -47,14 +47,14 @@ public class DatabaseConfig {
 
 		@SuppressWarnings("deprecation")
 		IRuntimeConfig runtimeConfig = new RuntimeConfigBuilder().defaults(command)
-//				.artifactStore(new ExtractedArtifactStoreBuilder().defaults(command)
-//						.download(new DownloadConfigBuilder().defaultsForCommand(command).downloadPath(DOWNLOAD_URL)))
-				.artifactStore(new ExtractedArtifactStoreBuilder()
-						.defaults(command)
-						.download(new DownloadConfigBuilder()
-								.defaultsForCommand(command)
-								.proxyFactory(new HttpProxyFactory("201.200.200.209", 8580)))
-						)
+				.artifactStore(new ExtractedArtifactStoreBuilder().defaults(command)
+						.download(new DownloadConfigBuilder().defaultsForCommand(command).downloadPath(DOWNLOAD_URL)))
+//				.artifactStore(new ExtractedArtifactStoreBuilder()
+//						.defaults(command)
+//						.download(new DownloadConfigBuilder()
+//								.defaultsForCommand(command)
+//								.proxyFactory(new HttpProxyFactory("201.200.200.209", 8580)))
+//						)
 				.build();
 
 		return runtimeConfig;
