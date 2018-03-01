@@ -7,6 +7,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 import org.springframework.data.mongodb.core.MongoTemplate;
+import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
+
 import com.mongodb.Mongo;
 import com.mongodb.MongoClient;
 import de.flapdoodle.embed.mongo.Command;
@@ -27,7 +29,7 @@ import de.flapdoodle.embed.process.runtime.Network;
 
 @Profile("test")
 @Configuration
-//@EnableMongoRepositories(basePackages= {"cn.org.craftsmen.ms.assists.repositories"})
+@EnableMongoRepositories(basePackages= {"cn.org.craftsmen.ms.assists.repositories"})
 public class EmbeddedMongoConfig {
 	
 	private static final String DOWNLOAD_URL = "http://lib.craftsmen.org.cn/mongo/";

@@ -2,22 +2,24 @@ package cn.org.craftsmen.ms.assists.repositories;
 
 import static org.junit.Assert.*;
 import java.io.IOException;
+import org.junit.After;
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ActiveProfiles;
+import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringRunner;
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import cn.org.craftsmen.ms.assists.AssistsApplication;
+import cn.org.craftsmen.ms.assists.config.EmbeddedMongoConfig;
 import cn.org.craftsmen.ms.assists.domain.ExchangeRates;
 import cn.org.craftsmen.ms.assists.repositories.ExchangeRatesRepository;
 
 @ActiveProfiles("test")
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes= {AssistsApplication.class})
+@ContextConfiguration(classes= {EmbeddedMongoConfig.class})
 public class ExchangeRatesRepositoryTest {
 	
 	private static final String EXCHANGE_RATES = "{" + 
@@ -201,6 +203,17 @@ public class ExchangeRatesRepositoryTest {
 	private ObjectMapper objectMapper = new ObjectMapper();
 	@Autowired
 	private ExchangeRatesRepository repo;
+	
+	@Before
+	public void setUp() throws JsonParseException, JsonMappingException, IOException {
+		ExchangeRates exchangeRates = objectMapper.readValue(EXCHANGE_RATES, ExchangeRates.class);
+		repo.save(exchangeRates);
+	}
+	
+	@After
+	public void tearDown() {
+		repo.deleteAll();
+	}
 
 	@Test
 	public void testFindLastExchangeRates() {

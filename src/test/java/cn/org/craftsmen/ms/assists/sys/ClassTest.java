@@ -1,7 +1,5 @@
 package cn.org.craftsmen.ms.assists.sys;
 
-import static org.junit.Assert.assertEquals;
-
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 import java.security.MessageDigest;
@@ -12,9 +10,7 @@ import java.util.List;
 import java.util.Locale;
 import java.util.TimeZone;
 import org.junit.Test;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestTemplate;
-
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class ClassTest {

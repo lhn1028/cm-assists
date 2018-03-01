@@ -7,17 +7,16 @@ import java.sql.SQLException;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowCallbackHandler;
 import org.springframework.test.context.ActiveProfiles;
+import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-
-import cn.org.craftsmen.ms.assists.AssistsApplication;
+import cn.org.craftsmen.ms.assists.config.EmbeddedDatabaseConfig;
 
 @ActiveProfiles({"test"})
 @RunWith(SpringJUnit4ClassRunner.class)
-@SpringBootTest(classes= {AssistsApplication.class})
+@ContextConfiguration(classes= {EmbeddedDatabaseConfig.class})
 public class DatabaseTest {
 	
 	@Autowired
