@@ -1,16 +1,12 @@
 package cn.org.craftsmen.ms.assist.repositories;
 
 import static org.junit.Assert.*;
-import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.util.List;
 import java.util.Locale;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.core.RowCallbackHandler;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
 import cn.org.craftsmen.ms.assist.AssistApplication;
@@ -23,59 +19,6 @@ public class BaiduCodeMappingRepositoryTest {
 	
 	@Autowired
 	private BaiduCodeMappingRepository repo;
-	
-	@Autowired
-	private JdbcTemplate jdbcTemplate;
-	
-//	@Test
-//	public void testViewData() {
-//		assertNotNull(jdbcTemplate);
-//		
-//		String SQL = "SELECT COUNT(*) FROM v_java_locale_baidu_mapping";
-//		jdbcTemplate.query(SQL, new RowCallbackHandler() {
-//
-//			@Override
-//			public void processRow(ResultSet rs) throws SQLException {
-//				int count = rs.getInt(1);
-//				assertTrue(0 < count);
-//			}});
-//	}
-	
-	@Test
-	public void testJavaLocaleData() {
-		String sql = "SELECT COUNT(*) FROM java_locale";
-		jdbcTemplate.query(sql, new RowCallbackHandler() {
-
-			@Override
-			public void processRow(ResultSet rs) throws SQLException {
-				int count = rs.getInt(1);
-				assertTrue(0 < count);
-			}});
-	}
-	
-	@Test
-	public void testLanguageCodeBaiduData() {
-		String sql = "SELECT COUNT(*) FROM language_code_baidu";
-		jdbcTemplate.query(sql, new RowCallbackHandler() {
-
-			@Override
-			public void processRow(ResultSet rs) throws SQLException {
-				int count = rs.getInt(1);
-				assertTrue(0 < count);
-			}});
-	}
-	
-	@Test
-	public void testJavaLocaleBaiduMappingData() {
-		String sql = "SELECT COUNT(*) FROM java_locale_baidu_mapping";
-		jdbcTemplate.query(sql, new RowCallbackHandler() {
-
-			@Override
-			public void processRow(ResultSet rs) throws SQLException {
-				int count = rs.getInt(1);
-				assertTrue(0 < count);
-			}});
-	}
 
 	@Test
 	public void testFindByLanguageAndCountry() {

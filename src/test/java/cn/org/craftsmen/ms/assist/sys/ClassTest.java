@@ -1,4 +1,4 @@
-package cn.org.craftsmen.ms.assist.temp;
+package cn.org.craftsmen.ms.assist.sys;
 
 import static org.junit.Assert.assertEquals;
 
