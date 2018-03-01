@@ -1,4 +1,4 @@
-package cn.org.craftsmen.ms.assist.config.prod;
+package cn.org.craftsmen.ms.assist.config;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,7 +16,7 @@ import com.mongodb.MongoClient;
 import com.mongodb.MongoCredential;
 import com.mongodb.ServerAddress;
 
-@Profile("prod")
+@Profile({"prod", "dev"})
 @Configuration
 @ConfigurationProperties(prefix="application.data")
 public class DatabaseConfig {

@@ -1,4 +1,4 @@
-package cn.org.craftsmen.ms.assist.config.dev;
+package cn.org.craftsmen.ms.assist.config;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -11,7 +11,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import cn.org.craftsmen.ms.assist.domain.ExchangeRates;
 import cn.org.craftsmen.ms.assist.repositories.ExchangeRatesRepository;
 
-@Profile({"dev"})
+@Profile({"test"})
 @Component
 public class ExchangeRatesInitializer implements CommandLineRunner {
 	

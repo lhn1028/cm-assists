@@ -1,4 +1,4 @@
-package cn.org.craftsmen.ms.assist.config.dev;
+package cn.org.craftsmen.ms.assist.config;
 
 import java.io.IOException;
 import java.net.InetAddress;
@@ -7,6 +7,7 @@ import javax.sql.DataSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseBuilder;
 import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType;
@@ -27,13 +28,14 @@ import de.flapdoodle.embed.process.config.IRuntimeConfig;
 import de.flapdoodle.embed.process.distribution.GenericVersion;
 import de.flapdoodle.embed.process.runtime.Network;
 
-@Profile("dev")
-@Configuration
-public class DatabaseConfig {
+//@Profile("test")
+//@Configuration
+//@EnableJpaRepositories("cn.org.craftsmen.ms.assist.repositories")
+public class TestingDatabaseConfig {
 
 	@Bean
 	public DataSource embeddedDataSource() {
-		return new EmbeddedDatabaseBuilder().setType(EmbeddedDatabaseType.H2).setName("assists")
+		return new EmbeddedDatabaseBuilder().setType(EmbeddedDatabaseType.HSQL).setName("assists")
 				.addScript("classpath:/sql/schema.sql").addScript("classpath:/sql/data.sql").build();
 	}
 	

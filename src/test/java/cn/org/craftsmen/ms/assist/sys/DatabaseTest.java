@@ -17,7 +17,7 @@ import cn.org.craftsmen.ms.assist.AssistApplication;
 @ActiveProfiles({"test"})
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringBootTest(classes= {AssistApplication.class})
-public class H2DatabaseTest {
+public class DatabaseTest {
 	
 	@Autowired
 	private JdbcTemplate jdbcTemplate;
