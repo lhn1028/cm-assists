@@ -17,8 +17,7 @@ import org.springframework.web.client.RestTemplate;
 @EnableScheduling
 @EnableCaching
 @EnableDiscoveryClient
-@SpringBootApplication
-//@SpringBootApplication(exclude = {EmbeddedMongoAutoConfiguration.class, MongoAutoConfiguration.class, MongoDataAutoConfiguration.class})
+@SpringBootApplication(exclude = {EmbeddedMongoAutoConfiguration.class, MongoAutoConfiguration.class, MongoDataAutoConfiguration.class})
 public class AssistApplication {
 
     public static void main(String[] args) {

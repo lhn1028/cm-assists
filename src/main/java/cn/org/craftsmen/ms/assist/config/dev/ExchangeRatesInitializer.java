@@ -11,7 +11,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import cn.org.craftsmen.ms.assist.domain.ExchangeRates;
 import cn.org.craftsmen.ms.assist.repositories.ExchangeRatesRepository;
 
-@Profile({"dev", "test"})
+@Profile({"dev"})
 @Component
 public class ExchangeRatesInitializer implements CommandLineRunner {
 	
