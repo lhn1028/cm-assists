@@ -5,7 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import cn.org.craftsmen.ms.assists.api.ExchangeRatesReaper;
-import cn.org.craftsmen.ms.assists.domain.ExchangeRates;
+import cn.org.craftsmen.ms.assists.entities.ExchangeRates;
 import cn.org.craftsmen.ms.assists.exceptions.ExchangeRateConversionException;
 import cn.org.craftsmen.ms.assists.repositories.ExchangeRatesRepository;
 

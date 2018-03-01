@@ -8,7 +8,7 @@ import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
 import cn.org.craftsmen.ms.assists.api.ExchangeRatesReaper;
-import cn.org.craftsmen.ms.assists.domain.ExchangeRates;
+import cn.org.craftsmen.ms.assists.entities.ExchangeRates;
 import cn.org.craftsmen.ms.assists.exceptions.ReapExchangeRatesException;
 import cn.org.craftsmen.ms.assists.repositories.ExchangeRatesRepository;
 

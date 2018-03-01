@@ -9,7 +9,7 @@ import org.springframework.data.domain.Sort;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Query;
 
-import cn.org.craftsmen.ms.assists.domain.ExchangeRates;
+import cn.org.craftsmen.ms.assists.entities.ExchangeRates;
 
 @CacheConfig(cacheNames = "exchangeRates")
 public class ExchangeRatesRepositoryImpl implements ExchangeRatesRepositoryCustom {

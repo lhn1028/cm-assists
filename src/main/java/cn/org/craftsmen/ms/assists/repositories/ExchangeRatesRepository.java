@@ -2,7 +2,7 @@ package cn.org.craftsmen.ms.assists.repositories;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 
-import cn.org.craftsmen.ms.assists.domain.ExchangeRates;
+import cn.org.craftsmen.ms.assists.entities.ExchangeRates;
 
 /***
  * Exchange rates repository

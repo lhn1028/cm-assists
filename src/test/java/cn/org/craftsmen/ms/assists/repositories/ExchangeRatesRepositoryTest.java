@@ -14,7 +14,7 @@ import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import cn.org.craftsmen.ms.assists.config.EmbeddedMongoConfig;
-import cn.org.craftsmen.ms.assists.domain.ExchangeRates;
+import cn.org.craftsmen.ms.assists.entities.ExchangeRates;
 import cn.org.craftsmen.ms.assists.repositories.ExchangeRatesRepository;
 
 @ActiveProfiles("test")

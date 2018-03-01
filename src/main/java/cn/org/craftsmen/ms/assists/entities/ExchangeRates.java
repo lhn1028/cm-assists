@@ -1,4 +1,4 @@
-package cn.org.craftsmen.ms.assists.domain;
+package cn.org.craftsmen.ms.assists.entities;
 
 import java.util.Date;
 import java.util.Map;

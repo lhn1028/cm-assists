@@ -1,6 +1,6 @@
 package cn.org.craftsmen.ms.assists.repositories;
 
-import cn.org.craftsmen.ms.assists.domain.ExchangeRates;
+import cn.org.craftsmen.ms.assists.entities.ExchangeRates;
 
 /***
  * Customize method of exchange rates repository
