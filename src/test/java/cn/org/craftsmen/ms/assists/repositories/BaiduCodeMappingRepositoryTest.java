@@ -8,16 +8,13 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ActiveProfiles;
-import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringRunner;
 import cn.org.craftsmen.ms.assists.AssistsApplication;
-import cn.org.craftsmen.ms.assists.config.EmbeddedDatabaseConfig;
 import cn.org.craftsmen.ms.assists.entities.BaiduCodeMapping;
 import cn.org.craftsmen.ms.assists.repositories.BaiduCodeMappingRepository;
 
 @ActiveProfiles({"test"})
 @RunWith(SpringRunner.class)
-//@ContextConfiguration(classes= {EmbeddedDatabaseConfig.class})
 @SpringBootTest(classes= {AssistsApplication.class})
 public class BaiduCodeMappingRepositoryTest {
 	

@@ -7,7 +7,6 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 import org.springframework.data.mongodb.core.MongoTemplate;
-
 import com.mongodb.Mongo;
 import com.mongodb.MongoClient;
 import de.flapdoodle.embed.mongo.Command;
@@ -28,7 +27,9 @@ import de.flapdoodle.embed.process.runtime.Network;
 
 @Profile("test")
 @Configuration
+//@EnableMongoRepositories(basePackages= {"cn.org.craftsmen.ms.assists.repositories"})
 public class EmbeddedMongoConfig {
+	
 	private static final String DOWNLOAD_URL = "http://lib.craftsmen.org.cn/mongo/";
 	private static final String MONGO_DB_NAME = "assists";
 
@@ -87,6 +88,7 @@ public class EmbeddedMongoConfig {
 
 	@Bean
 	public MongoTemplate mongoTemplate(Mongo mongo) throws IOException, InterruptedException {
-		return new MongoTemplate(mongo, MONGO_DB_NAME);
+		MongoTemplate mongoTemplate = new MongoTemplate(mongo, MONGO_DB_NAME);
+		return mongoTemplate;
 	}
 }
