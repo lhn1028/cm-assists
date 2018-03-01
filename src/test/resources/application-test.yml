@@ -1,6 +1,8 @@
 spring:
   profiles:
     active: test
+#    include:
+#    - dev
   jpa:
     hibernate:
       ddl-auto: none
@@ -8,7 +10,7 @@ spring:
   
 logging:
   level:
-    root: INFO
+    root: DEBUG
     
 eureka:
   instance:

@@ -3,14 +3,13 @@ package cn.org.craftsmen.ms.assists.config;
 import java.io.IOException;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
-
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 import org.springframework.data.mongodb.core.MongoTemplate;
 
+import com.mongodb.Mongo;
 import com.mongodb.MongoClient;
-
 import de.flapdoodle.embed.mongo.Command;
 import de.flapdoodle.embed.mongo.MongodExecutable;
 import de.flapdoodle.embed.mongo.MongodProcess;
@@ -77,11 +76,17 @@ public class EmbeddedMongoConfig {
 	public MongodProcess mongodProcess(MongodExecutable mongodExecutable) throws IOException {
 		return mongodExecutable.start();
 	}
-
+	
 	@Bean
-	public MongoTemplate mongoTemplate(MongodProcess mongodProcess) throws IOException, InterruptedException {
+	public Mongo mongo(MongodProcess mongodProcess) {
 		IMongodConfig mongodConfig = mongodProcess.getConfig();
 		MongoClient mongoClient = new MongoClient(mongodConfig.net().getBindIp(), mongodConfig.net().getPort());
-		return new MongoTemplate(mongoClient, MONGO_DB_NAME);
+		
+		return mongoClient;
+	}
+
+	@Bean
+	public MongoTemplate mongoTemplate(Mongo mongo) throws IOException, InterruptedException {
+		return new MongoTemplate(mongo, MONGO_DB_NAME);
 	}
 }

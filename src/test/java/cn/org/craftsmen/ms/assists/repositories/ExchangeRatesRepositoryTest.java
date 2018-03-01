@@ -1,26 +1,22 @@
 package cn.org.craftsmen.ms.assists.repositories;
 
 import static org.junit.Assert.*;
-
 import java.io.IOException;
-
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ActiveProfiles;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-
+import org.springframework.test.context.junit4.SpringRunner;
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-
 import cn.org.craftsmen.ms.assists.AssistsApplication;
 import cn.org.craftsmen.ms.assists.domain.ExchangeRates;
 import cn.org.craftsmen.ms.assists.repositories.ExchangeRatesRepository;
 
 @ActiveProfiles("test")
-@RunWith(SpringJUnit4ClassRunner.class)
+@RunWith(SpringRunner.class)
 @SpringBootTest(classes= {AssistsApplication.class})
 public class ExchangeRatesRepositoryTest {
 	
@@ -202,8 +198,7 @@ public class ExchangeRatesRepositoryTest {
 			"    }" + 
 			"}";
 	
-	@Autowired
-	private ObjectMapper objectMapper;
+	private ObjectMapper objectMapper = new ObjectMapper();
 	@Autowired
 	private ExchangeRatesRepository repo;
 

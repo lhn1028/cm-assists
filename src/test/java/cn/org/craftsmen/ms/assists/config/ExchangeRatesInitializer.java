@@ -196,12 +196,11 @@ public class ExchangeRatesInitializer implements CommandLineRunner {
 	
 	private static final Logger log = LoggerFactory.getLogger(ExchangeRatesInitializer.class);
 	
-	private ObjectMapper objectMapper;
+	private ObjectMapper objectMapper = new ObjectMapper();
 	private ExchangeRatesRepository exchangeRatesRepository;
 	
 	@Autowired
-	public ExchangeRatesInitializer(ObjectMapper objectMapper, ExchangeRatesRepository exchangeRatesRepository) {
-		this.objectMapper = objectMapper;
+	public ExchangeRatesInitializer(ExchangeRatesRepository exchangeRatesRepository) {
 		this.exchangeRatesRepository = exchangeRatesRepository;
 	}
 
