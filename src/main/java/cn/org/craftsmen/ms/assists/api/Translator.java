@@ -19,11 +19,11 @@ public interface Translator {
 	 * @param from
 	 * @param to
 	 * @return
-	 * @throws
-	 * IllegalArgumentException 
+	 * @throws IllegalArgumentException 
 	 * When content is null or empty
 	 * When Locale `from` or `to` is null
-	 * TranslateException 
+	 * @throws NotSupportLocalException
+	 * @throws TranslateException 
 	 */
 	String translate(String content, Locale from, Locale to);
 }

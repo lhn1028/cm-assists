@@ -14,7 +14,10 @@ public interface TranslationService {
 	 * @param from
 	 * @param to
 	 * @return
-	 * @throws TranslateException 
+	 * 
+	 * @throws IllegalArgumentException
+	 * @throws NotSupportLocaleException 
+	 * @throws TranslateException
 	 */
 	String translate(String content, Locale from, Locale to);
 

@@ -8,3 +8,4 @@ target/
 *.iml
 logs/
 .factorypath
+.apt_generated

@@ -14,8 +14,12 @@ import cn.org.craftsmen.ms.assists.web.response.TranslateResponse;
 @RequestMapping("/trans")
 public class TranslateController {
 	
-	@Autowired
 	private TranslationService translationService;
+	
+	@Autowired
+	public TranslateController(TranslationService translationService) {
+		this.translationService = translationService;
+	}
 
 	@RequestMapping(method=RequestMethod.POST)
 	public TranslateResponse translate(@RequestBody TranslateRequest req) {

@@ -24,6 +24,7 @@ import cn.org.craftsmen.ms.assists.services.LanguageCodeMapper;
 @Service
 public class BaiduTranslator implements Translator {
 
+	@SuppressWarnings("unused")
 	private static final class TranslateResult {
 		private String src;
 		private String dst;
@@ -50,6 +51,7 @@ public class BaiduTranslator implements Translator {
 		}
 	}
 
+	@SuppressWarnings("unused")
 	private static final class TranslateResponse {
 		private String from;
 		private String to;
@@ -86,6 +88,7 @@ public class BaiduTranslator implements Translator {
 		}
 	}
 	
+	@SuppressWarnings("unused")
 	private static final class TranslateError {
 		public static final class Data {
 			@JsonProperty(value="client_ip")

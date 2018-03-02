@@ -21,6 +21,12 @@ public class TranslationServiceImpl implements TranslationService {
 
 	@Override
 	public String translate(String content, Locale from, Locale to) {
+		if (null == content || "".equals(content.trim())) {
+			throw new IllegalArgumentException("Content of translation must not be null or empty");
+		}
+		if (null == from || null == to) {
+			throw new IllegalArgumentException("The locale of `from` and `to` must not be null");
+		}
 		return translator.translate(content, from, to);
 	}
 
