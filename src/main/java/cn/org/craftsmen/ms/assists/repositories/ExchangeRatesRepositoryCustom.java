@@ -17,6 +17,8 @@ public interface ExchangeRatesRepositoryCustom {
 	/***
 	 * Save exchange rates into database
 	 * @param exchangeRates
+	 * @throws
+	 * IllegalArgumentException If exchangeRates is null or empty
 	 */
 	void saveExchangeRates(ExchangeRates exchangeRates);
 }

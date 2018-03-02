@@ -221,6 +221,8 @@ public class ExchangeRatesRepositoryTest {
 		ExchangeRates rates = repo.findLastExchangeRates();
 		
 		assertNotNull(rates);
+		assertNotNull(rates.getRates());
+		assertTrue(0 < rates.getRates().size());
 	}
 
 	@Test
@@ -231,5 +233,22 @@ public class ExchangeRatesRepositoryTest {
 		assertEquals(1, repo.count());
 		repo.saveExchangeRates(exchangeRates);
 		assertEquals(2, repo.count());
+	}
+	
+	@Test(expected=IllegalArgumentException.class)
+	public void testSaveExchangeRatesWithNull() {
+		
+		assertEquals(1, repo.count());
+		repo.saveExchangeRates(null);
+		assertEquals(1, repo.count());
+	}
+	
+	@Test(expected=IllegalArgumentException.class)
+	public void testSaveExchangeRatesWithEmptyObject() {
+		ExchangeRates exchangeRates = new ExchangeRates();
+		
+		assertEquals(1, repo.count());
+		repo.saveExchangeRates(exchangeRates);
+		assertEquals(1, repo.count());
 	}
 }

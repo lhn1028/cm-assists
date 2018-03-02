@@ -1,0 +1,602 @@
+[
+	{
+		"language" : "ar",
+		"country" : "AE",
+		"variant" : ""
+	},
+	{
+		"language" : "ar",
+		"country" : "JO",
+		"variant" : ""
+	},
+	{
+		"language" : "ar",
+		"country" : "SY",
+		"variant" : ""
+	},
+	{
+		"language" : "fr",
+		"country" : "BE",
+		"variant" : ""
+	},
+	{
+		"language" : "es",
+		"country" : "PA",
+		"variant" : ""
+	},
+	{
+		"language" : "es",
+		"country" : "VE",
+		"variant" : ""
+	},
+	{
+		"language" : "bg",
+		"country" : "",
+		"variant" : ""
+	},
+	{
+		"language" : "zh",
+		"country" : "TW",
+		"variant" : ""
+	},
+	{
+		"language" : "it",
+		"country" : "",
+		"variant" : ""
+	},
+	{
+		"language" : "ko",
+		"country" : "",
+		"variant" : ""
+	},
+	{
+		"language" : "uk",
+		"country" : "",
+		"variant" : ""
+	},
+	{
+		"language" : "da",
+		"country" : "DK",
+		"variant" : ""
+	},
+	{
+		"language" : "es",
+		"country" : "PR",
+		"variant" : ""
+	},
+	{
+		"language" : "vi",
+		"country" : "VN",
+		"variant" : ""
+	},
+	{
+		"language" : "en",
+		"country" : "US",
+		"variant" : ""
+	},
+	{
+		"language" : "sv",
+		"country" : "SE",
+		"variant" : ""
+	},
+	{
+		"language" : "es",
+		"country" : "BO",
+		"variant" : ""
+	},
+	{
+		"language" : "en",
+		"country" : "SG",
+		"variant" : ""
+	},
+	{
+		"language" : "ar",
+		"country" : "BH",
+		"variant" : ""
+	},
+	{
+		"language" : "pt",
+		"country" : "",
+		"variant" : ""
+	},
+	{
+		"language" : "ar",
+		"country" : "SA",
+		"variant" : ""
+	},
+	{
+		"language" : "ar",
+		"country" : "YE",
+		"variant" : ""
+	},
+	{
+		"language" : "ga",
+		"country" : "",
+		"variant" : ""
+	},
+	{
+		"language" : "en",
+		"country" : "MT",
+		"variant" : ""
+	},
+	{
+		"language" : "fi",
+		"country" : "FI",
+		"variant" : ""
+	},
+	{
+		"language" : "et",
+		"country" : "",
+		"variant" : ""
+	},
+	{
+		"language" : "sv",
+		"country" : "",
+		"variant" : ""
+	},
+	{
+		"language" : "cs",
+		"country" : "",
+		"variant" : ""
+	},
+	{
+		"language" : "el",
+		"country" : "",
+		"variant" : ""
+	},
+	{
+		"language" : "uk",
+		"country" : "UA",
+		"variant" : ""
+	},
+	{
+		"language" : "hu",
+		"country" : "",
+		"variant" : ""
+	},
+	{
+		"language" : "fr",
+		"country" : "CH",
+		"variant" : ""
+	},
+	{
+		"language" : "es",
+		"country" : "AR",
+		"variant" : ""
+	},
+	{
+		"language" : "ar",
+		"country" : "EG",
+		"variant" : ""
+	},
+	{
+		"language" : "ja",
+		"country" : "JP",
+		"variant" : "JP"
+	},
+	{
+		"language" : "es",
+		"country" : "SV",
+		"variant" : ""
+	},
+	{
+		"language" : "pt",
+		"country" : "BR",
+		"variant" : ""
+	},
+	{
+		"language" : "be",
+		"country" : "",
+		"variant" : ""
+	},
+	{
+		"language" : "cs",
+		"country" : "CZ",
+		"variant" : ""
+	},
+	{
+		"language" : "es",
+		"country" : "",
+		"variant" : ""
+	},
+	{
+		"language" : "pl",
+		"country" : "PL",
+		"variant" : ""
+	},
+	{
+		"language" : "ca",
+		"country" : "ES",
+		"variant" : ""
+	},
+	{
+		"language" : "es",
+		"country" : "ES",
+		"variant" : ""
+	},
+	{
+		"language" : "es",
+		"country" : "CO",
+		"variant" : ""
+	},
+	{
+		"language" : "bg",
+		"country" : "BG",
+		"variant" : ""
+	},
+	{
+		"language" : "fr",
+		"country" : "",
+		"variant" : ""
+	},
+	{
+		"language" : "ja",
+		"country" : "",
+		"variant" : ""
+	},
+	{
+		"language" : "es",
+		"country" : "PY",
+		"variant" : ""
+	},
+	{
+		"language" : "de",
+		"country" : "",
+		"variant" : ""
+	},
+	{
+		"language" : "es",
+		"country" : "EC",
+		"variant" : ""
+	},
+	{
+		"language" : "es",
+		"country" : "US",
+		"variant" : ""
+	},
+	{
+		"language" : "ar",
+		"country" : "SD",
+		"variant" : ""
+	},
+	{
+		"language" : "en",
+		"country" : "",
+		"variant" : ""
+	},
+	{
+		"language" : "ro",
+		"country" : "RO",
+		"variant" : ""
+	},
+	{
+		"language" : "en",
+		"country" : "PH",
+		"variant" : ""
+	},
+	{
+		"language" : "ar",
+		"country" : "TN",
+		"variant" : ""
+	},
+	{
+		"language" : "es",
+		"country" : "GT",
+		"variant" : ""
+	},
+	{
+		"language" : "sl",
+		"country" : "",
+		"variant" : ""
+	},
+	{
+		"language" : "ko",
+		"country" : "KR",
+		"variant" : ""
+	},
+	{
+		"language" : "el",
+		"country" : "CY",
+		"variant" : ""
+	},
+	{
+		"language" : "es",
+		"country" : "MX",
+		"variant" : ""
+	},
+	{
+		"language" : "ru",
+		"country" : "RU",
+		"variant" : ""
+	},
+	{
+		"language" : "es",
+		"country" : "HN",
+		"variant" : ""
+	},
+	{
+		"language" : "zh",
+		"country" : "HK",
+		"variant" : ""
+	},
+	{
+		"language" : "hu",
+		"country" : "HU",
+		"variant" : ""
+	},
+	{
+		"language" : "th",
+		"country" : "TH",
+		"variant" : ""
+	},
+	{
+		"language" : "ar",
+		"country" : "IQ",
+		"variant" : ""
+	},
+	{
+		"language" : "es",
+		"country" : "CL",
+		"variant" : ""
+	},
+	{
+		"language" : "fi",
+		"country" : "",
+		"variant" : ""
+	},
+	{
+		"language" : "ar",
+		"country" : "MA",
+		"variant" : ""
+	},
+	{
+		"language" : "ga",
+		"country" : "IE",
+		"variant" : ""
+	},
+	{
+		"language" : "et",
+		"country" : "EE",
+		"variant" : ""
+	},
+	{
+		"language" : "ar",
+		"country" : "QA",
+		"variant" : ""
+	},
+	{
+		"language" : "pt",
+		"country" : "PT",
+		"variant" : ""
+	},
+	{
+		"language" : "fr",
+		"country" : "LU",
+		"variant" : ""
+	},
+	{
+		"language" : "ar",
+		"country" : "OM",
+		"variant" : ""
+	},
+	{
+		"language" : "th",
+		"country" : "",
+		"variant" : ""
+	},
+	{
+		"language" : "es",
+		"country" : "DO",
+		"variant" : ""
+	},
+	{
+		"language" : "es",
+		"country" : "CU",
+		"variant" : ""
+	},
+	{
+		"language" : "ar",
+		"country" : "",
+		"variant" : ""
+	},
+	{
+		"language" : "ru",
+		"country" : "",
+		"variant" : ""
+	},
+	{
+		"language" : "en",
+		"country" : "NZ",
+		"variant" : ""
+	},
+	{
+		"language" : "de",
+		"country" : "CH",
+		"variant" : ""
+	},
+	{
+		"language" : "es",
+		"country" : "UY",
+		"variant" : ""
+	},
+	{
+		"language" : "el",
+		"country" : "GR",
+		"variant" : ""
+	},
+	{
+		"language" : "en",
+		"country" : "ZA",
+		"variant" : ""
+	},
+	{
+		"language" : "th",
+		"country" : "TH",
+		"variant" : "TH"
+	},
+	{
+		"language" : "fr",
+		"country" : "FR",
+		"variant" : ""
+	},
+	{
+		"language" : "de",
+		"country" : "AT",
+		"variant" : ""
+	},
+	{
+		"language" : "nl",
+		"country" : "",
+		"variant" : ""
+	},
+	{
+		"language" : "en",
+		"country" : "AU",
+		"variant" : ""
+	},
+	{
+		"language" : "vi",
+		"country" : "",
+		"variant" : ""
+	},
+	{
+		"language" : "nl",
+		"country" : "NL",
+		"variant" : ""
+	},
+	{
+		"language" : "fr",
+		"country" : "CA",
+		"variant" : ""
+	},
+	{
+		"language" : "de",
+		"country" : "LU",
+		"variant" : ""
+	},
+	{
+		"language" : "es",
+		"country" : "CR",
+		"variant" : ""
+	},
+	{
+		"language" : "ar",
+		"country" : "KW",
+		"variant" : ""
+	},
+	{
+		"language" : "ar",
+		"country" : "LY",
+		"variant" : ""
+	},
+	{
+		"language" : "it",
+		"country" : "CH",
+		"variant" : ""
+	},
+	{
+		"language" : "da",
+		"country" : "",
+		"variant" : ""
+	},
+	{
+		"language" : "de",
+		"country" : "DE",
+		"variant" : ""
+	},
+	{
+		"language" : "ar",
+		"country" : "DZ",
+		"variant" : ""
+	},
+	{
+		"language" : "it",
+		"country" : "IT",
+		"variant" : ""
+	},
+	{
+		"language" : "en",
+		"country" : "IE",
+		"variant" : ""
+	},
+	{
+		"language" : "zh",
+		"country" : "SG",
+		"variant" : ""
+	},
+	{
+		"language" : "ro",
+		"country" : "",
+		"variant" : ""
+	},
+	{
+		"language" : "en",
+		"country" : "CA",
+		"variant" : ""
+	},
+	{
+		"language" : "nl",
+		"country" : "BE",
+		"variant" : ""
+	},
+	{
+		"language" : "pl",
+		"country" : "",
+		"variant" : ""
+	},
+	{
+		"language" : "zh",
+		"country" : "CN",
+		"variant" : ""
+	},
+	{
+		"language" : "ja",
+		"country" : "JP",
+		"variant" : ""
+	},
+	{
+		"language" : "de",
+		"country" : "GR",
+		"variant" : ""
+	},
+	{
+		"language" : "en",
+		"country" : "IN",
+		"variant" : ""
+	},
+	{
+		"language" : "ar",
+		"country" : "LB",
+		"variant" : ""
+	},
+	{
+		"language" : "es",
+		"country" : "NI",
+		"variant" : ""
+	},
+	{
+		"language" : "zh",
+		"country" : "",
+		"variant" : ""
+	},
+	{
+		"language" : "be",
+		"country" : "BY",
+		"variant" : ""
+	},
+	{
+		"language" : "sl",
+		"country" : "SI",
+		"variant" : ""
+	},
+	{
+		"language" : "es",
+		"country" : "PE",
+		"variant" : ""
+	},
+	{
+		"language" : "en",
+		"country" : "GB",
+		"variant" : ""
+	}
+]

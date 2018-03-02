@@ -35,6 +35,9 @@ public class ExchangeRatesRepositoryImpl implements ExchangeRatesRepositoryCusto
 	@CacheEvict
 	@Override
 	public void saveExchangeRates(ExchangeRates exchangeRates) {
+		if (null == exchangeRates || 0 >= exchangeRates.getRates().size()) {
+			throw new IllegalArgumentException("ExchangeRates can not be null or empty");
+		}
 		mongo.insert(exchangeRates);
 	}
 

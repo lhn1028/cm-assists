@@ -1,6 +1,7 @@
 package cn.org.craftsmen.ms.assists.entities;
 
 import java.util.Date;
+import java.util.HashMap;
 import java.util.Map;
 import java.util.stream.Collectors;
 import org.springframework.data.annotation.Id;
@@ -11,7 +12,7 @@ public class ExchangeRates {
 	private Date updateDate;
 	private String source;
 	private String base;
-	private Map<String, Double> rates;
+	private Map<String, Double> rates = new HashMap<String, Double>();
 	
 	public String getId() {
 		return id;

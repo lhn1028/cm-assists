@@ -5,7 +5,10 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.List;
 import java.util.Locale;
+
+import org.apache.commons.codec.binary.Hex;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestClientException;
 import org.springframework.web.client.RestTemplate;
@@ -14,8 +17,9 @@ import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+import cn.org.craftsmen.ms.assists.exceptions.NotSupportLocaleException;
 import cn.org.craftsmen.ms.assists.exceptions.TranslateException;
-import cn.org.craftsmen.ms.assists.services.BaiduLanguageCodeMapper;
+import cn.org.craftsmen.ms.assists.services.LanguageCodeMapper;
 
 @Service
 public class BaiduTranslator implements Translator {
@@ -83,10 +87,23 @@ public class BaiduTranslator implements Translator {
 	}
 	
 	private static final class TranslateError {
+		public static final class Data {
+			@JsonProperty(value="client_ip")
+			private String clientIp;
+
+			public String getClientIp() {
+				return clientIp;
+			}
+
+			public void setClientIp(String clientIp) {
+				this.clientIp = clientIp;
+			}
+		}
 		@JsonProperty(value="error_code")
 		private String errorCode;
 		@JsonProperty(value="error_msg")
 		private String errorMessage;
+		private Data data;
 		
 		public String getErrorCode() {
 			return errorCode;
@@ -100,21 +117,27 @@ public class BaiduTranslator implements Translator {
 		public void setErrorMessage(String errorMessage) {
 			this.errorMessage = errorMessage;
 		}
+		public Data getData() {
+			return data;
+		}
+		public void setData(Data data) {
+			this.data = data;
+		}
 	}
 
 	private static final String URI = "http://api.fanyi.baidu.com/api/trans/vip/translate?q={content}&from={from}&to={to}&appid={appId}&salt={salt}&sign={sign}";
 	private static final long APP_ID = 20180118000116571L;
 	private static final String KEY = "54CyEybMazJ5AvUVMYuz";
 
-	@Autowired
 	private RestTemplate rest;
-	@Autowired
 	private ObjectMapper objectMapper;
-	private BaiduLanguageCodeMapper codeMapper;
+	private LanguageCodeMapper codeMapper;
 
 	@Autowired
-	public BaiduTranslator(BaiduLanguageCodeMapper codeMapper) {
+	public BaiduTranslator(LanguageCodeMapper codeMapper, ObjectMapper objectMapper, RestTemplate rest) {
 		this.codeMapper = codeMapper;
+		this.objectMapper = objectMapper;
+		this.rest = rest;
 	}
 
 	@Override
@@ -124,9 +147,22 @@ public class BaiduTranslator implements Translator {
 
 	@Override
 	public String translate(String content, Locale from, Locale to) {
+		if (null == content || "".equals(content.trim())) {
+			throw new IllegalArgumentException("Content must not be empty");
+		}
+		if (null == from || null == to) {
+			throw new IllegalArgumentException("The locale of `from` and `to` must not be null");
+		}
+		
 		final long SALT = System.currentTimeMillis();
 		String codeFrom = codeMapper.getLanguageCode(from);
 		String codeTo = codeMapper.getLanguageCode(to);
+		if (null == codeFrom || "".equals(codeFrom.trim())) {
+			throw buildNotSupportLocaleException(from);
+		}
+		if (null == codeTo || "".equals(codeTo.trim())) {
+			throw buildNotSupportLocaleException(to);
+		}
 		String sign = buildSign(content, SALT).toLowerCase();
 		
 		String result = null;
@@ -143,27 +179,28 @@ public class BaiduTranslator implements Translator {
 			
 			return sb.toString();
 		} catch (RestClientException e) {
-			throw new TranslateException(500, String.format("Rest link (%s) was broken", URI), e);
+			throw new TranslateException(HttpStatus.BAD_GATEWAY.value(), String.format("Rest link (%s) was broken", URI), e);
 		} catch (JsonParseException e) {
-			throw new TranslateException(500, e.getMessage(), e);
+			throw new TranslateException(HttpStatus.BAD_GATEWAY.value(), "Parse json string from server to object error", e);
 		} catch (JsonMappingException e) {
 			// Server return error message
 			if (null == result || "".equals(result)) {
-				throw new TranslateException(500, String.format("Translate by %s is return null or empty string", URI), e);
+				throw new TranslateException(HttpStatus.BAD_GATEWAY.value(), String.format("Translate by %s is return null or empty string", URI), e);
 			}
 			try {
 				TranslateError error = objectMapper.readValue(result, TranslateError.class);
-				throw new TranslateException(Integer.parseInt(error.getErrorCode()), String.format("%s: %s", error.errorCode, error.errorMessage), e);
+				// Response error from upstream server
+				throw new TranslateException(511, String.format("%s: %s", error.errorCode, error.errorMessage), e);
 			} catch (IOException e1) {
-				throw new TranslateException(500, e1.getMessage(), e1);
+				throw new TranslateException(HttpStatus.BAD_GATEWAY.value(), e1.getMessage(), e1);
 			}
 		} catch (IOException e) {
-			throw new TranslateException(500, e.getMessage(), e);
+			throw new TranslateException(HttpStatus.BAD_GATEWAY.value(), e.getMessage(), e);
 		}
 		
 	}
 
-	private String buildSign(String content, long salt) {
+	public static String buildSign(String content, long salt) {
 		final String template = APP_ID + content + salt + KEY;
 
 		MessageDigest md;
@@ -173,18 +210,11 @@ public class BaiduTranslator implements Translator {
 			return "";
 		}
 		byte[] sign = md.digest(template.getBytes());
-		return bytesToHex(sign);
+
+		return Hex.encodeHexString(sign);
 	}
-
-	private final static char[] hexArray = "0123456789ABCDEF".toCharArray();
-
-	private String bytesToHex(byte[] bytes) {
-		char[] hexChars = new char[bytes.length * 2];
-		for (int j = 0; j < bytes.length; j++) {
-			int v = bytes[j] & 0xFF;
-			hexChars[j * 2] = hexArray[v >>> 4];
-			hexChars[j * 2 + 1] = hexArray[v & 0x0F];
-		}
-		return new String(hexChars);
+	
+	private NotSupportLocaleException buildNotSupportLocaleException(Locale locale) {
+		return new NotSupportLocaleException(String.format("Not support Locale: %s_%s", locale.getLanguage(), locale.getCountry()));
 	}
 }

@@ -1,0 +1,1202 @@
+[
+	{
+		"locale_id" : 2,
+		"language" : "ar",
+		"country" : "AE",
+		"variant" : "",
+		"locale_name" : "阿拉伯文 (阿拉伯联合酋长国)",
+		"baidu_id" : 10,
+		"baidu_code" : "ara",
+		"baidu_name" : "阿拉伯语"
+	},
+	{
+		"locale_id" : 3,
+		"language" : "ar",
+		"country" : "JO",
+		"variant" : "",
+		"locale_name" : "阿拉伯文 (约旦)",
+		"baidu_id" : 10,
+		"baidu_code" : "ara",
+		"baidu_name" : "阿拉伯语"
+	},
+	{
+		"locale_id" : 4,
+		"language" : "ar",
+		"country" : "SY",
+		"variant" : "",
+		"locale_name" : "阿拉伯文 (叙利亚)",
+		"baidu_id" : 10,
+		"baidu_code" : "ara",
+		"baidu_name" : "阿拉伯语"
+	},
+	{
+		"locale_id" : 6,
+		"language" : "fr",
+		"country" : "BE",
+		"variant" : "",
+		"locale_name" : "法文 (比利时)",
+		"baidu_id" : 7,
+		"baidu_code" : "fra",
+		"baidu_name" : "法语"
+	},
+	{
+		"locale_id" : 7,
+		"language" : "es",
+		"country" : "PA",
+		"variant" : "",
+		"locale_name" : "西班牙文 (巴拿马)",
+		"baidu_id" : 8,
+		"baidu_code" : "spa",
+		"baidu_name" : "西班牙语"
+	},
+	{
+		"locale_id" : 9,
+		"language" : "es",
+		"country" : "VE",
+		"variant" : "",
+		"locale_name" : "西班牙文 (委内瑞拉)",
+		"baidu_id" : 8,
+		"baidu_code" : "spa",
+		"baidu_name" : "西班牙语"
+	},
+	{
+		"locale_id" : 10,
+		"language" : "bg",
+		"country" : "",
+		"variant" : "",
+		"locale_name" : "保加利亚文",
+		"baidu_id" : 18,
+		"baidu_code" : "bul",
+		"baidu_name" : "保加利亚语"
+	},
+	{
+		"locale_id" : 11,
+		"language" : "zh",
+		"country" : "TW",
+		"variant" : "",
+		"locale_name" : "中文 (台湾地区)",
+		"baidu_id" : 27,
+		"baidu_code" : "cht",
+		"baidu_name" : "繁体中文"
+	},
+	{
+		"locale_id" : 12,
+		"language" : "it",
+		"country" : "",
+		"variant" : "",
+		"locale_name" : "意大利文",
+		"baidu_id" : 14,
+		"baidu_code" : "it",
+		"baidu_name" : "意大利语"
+	},
+	{
+		"locale_id" : 13,
+		"language" : "ko",
+		"country" : "",
+		"variant" : "",
+		"locale_name" : "朝鲜文",
+		"baidu_id" : 6,
+		"baidu_code" : "kor",
+		"baidu_name" : "韩语"
+	},
+	{
+		"locale_id" : 14,
+		"language" : "uk",
+		"country" : "",
+		"variant" : "",
+		"locale_name" : "乌克兰文",
+		"baidu_id" : 11,
+		"baidu_code" : "ru",
+		"baidu_name" : "俄语"
+	},
+	{
+		"locale_id" : 16,
+		"language" : "da",
+		"country" : "DK",
+		"variant" : "",
+		"locale_name" : "丹麦文 (丹麦)",
+		"baidu_id" : 20,
+		"baidu_code" : "dan",
+		"baidu_name" : "丹麦语"
+	},
+	{
+		"locale_id" : 17,
+		"language" : "es",
+		"country" : "PR",
+		"variant" : "",
+		"locale_name" : "西班牙文 (波多黎哥)",
+		"baidu_id" : 8,
+		"baidu_code" : "spa",
+		"baidu_name" : "西班牙语"
+	},
+	{
+		"locale_id" : 18,
+		"language" : "vi",
+		"country" : "VN",
+		"variant" : "",
+		"locale_name" : "越南文 (越南)",
+		"baidu_id" : 28,
+		"baidu_code" : "vie",
+		"baidu_name" : "越南语"
+	},
+	{
+		"locale_id" : 19,
+		"language" : "en",
+		"country" : "US",
+		"variant" : "",
+		"locale_name" : "英文 (美国)",
+		"baidu_id" : 2,
+		"baidu_code" : "en",
+		"baidu_name" : "英语"
+	},
+	{
+		"locale_id" : 21,
+		"language" : "sv",
+		"country" : "SE",
+		"variant" : "",
+		"locale_name" : "瑞典文 (瑞典)",
+		"baidu_id" : 25,
+		"baidu_code" : "swe",
+		"baidu_name" : "瑞典语"
+	},
+	{
+		"locale_id" : 22,
+		"language" : "es",
+		"country" : "BO",
+		"variant" : "",
+		"locale_name" : "西班牙文 (玻利维亚)",
+		"baidu_id" : 8,
+		"baidu_code" : "spa",
+		"baidu_name" : "西班牙语"
+	},
+	{
+		"locale_id" : 23,
+		"language" : "en",
+		"country" : "SG",
+		"variant" : "",
+		"locale_name" : "英文 (新加坡)",
+		"baidu_id" : 2,
+		"baidu_code" : "en",
+		"baidu_name" : "英语"
+	},
+	{
+		"locale_id" : 24,
+		"language" : "ar",
+		"country" : "BH",
+		"variant" : "",
+		"locale_name" : "阿拉伯文 (巴林)",
+		"baidu_id" : 10,
+		"baidu_code" : "ara",
+		"baidu_name" : "阿拉伯语"
+	},
+	{
+		"locale_id" : 25,
+		"language" : "pt",
+		"country" : "",
+		"variant" : "",
+		"locale_name" : "葡萄牙文",
+		"baidu_id" : 12,
+		"baidu_code" : "pt",
+		"baidu_name" : "葡萄牙语"
+	},
+	{
+		"locale_id" : 26,
+		"language" : "ar",
+		"country" : "SA",
+		"variant" : "",
+		"locale_name" : "阿拉伯文 (沙特阿拉伯)",
+		"baidu_id" : 10,
+		"baidu_code" : "ara",
+		"baidu_name" : "阿拉伯语"
+	},
+	{
+		"locale_id" : 28,
+		"language" : "ar",
+		"country" : "YE",
+		"variant" : "",
+		"locale_name" : "阿拉伯文 (也门)",
+		"baidu_id" : 10,
+		"baidu_code" : "ara",
+		"baidu_name" : "阿拉伯语"
+	},
+	{
+		"locale_id" : 30,
+		"language" : "ga",
+		"country" : "",
+		"variant" : "",
+		"locale_name" : "爱尔兰文",
+		"baidu_id" : 2,
+		"baidu_code" : "en",
+		"baidu_name" : "英语"
+	},
+	{
+		"locale_id" : 31,
+		"language" : "en",
+		"country" : "MT",
+		"variant" : "",
+		"locale_name" : "英文 (马耳他)",
+		"baidu_id" : 2,
+		"baidu_code" : "en",
+		"baidu_name" : "英语"
+	},
+	{
+		"locale_id" : 32,
+		"language" : "fi",
+		"country" : "FI",
+		"variant" : "",
+		"locale_name" : "芬兰文 (芬兰)",
+		"baidu_id" : 21,
+		"baidu_code" : "fin",
+		"baidu_name" : "芬兰语"
+	},
+	{
+		"locale_id" : 33,
+		"language" : "et",
+		"country" : "",
+		"variant" : "",
+		"locale_name" : "爱沙尼亚文",
+		"baidu_id" : 19,
+		"baidu_code" : "est",
+		"baidu_name" : "爱沙尼亚语"
+	},
+	{
+		"locale_id" : 34,
+		"language" : "sv",
+		"country" : "",
+		"variant" : "",
+		"locale_name" : "瑞典文",
+		"baidu_id" : 25,
+		"baidu_code" : "swe",
+		"baidu_name" : "瑞典语"
+	},
+	{
+		"locale_id" : 35,
+		"language" : "cs",
+		"country" : "",
+		"variant" : "",
+		"locale_name" : "捷克文",
+		"baidu_id" : 22,
+		"baidu_code" : "cs",
+		"baidu_name" : "捷克语"
+	},
+	{
+		"locale_id" : 37,
+		"language" : "el",
+		"country" : "",
+		"variant" : "",
+		"locale_name" : "希腊文",
+		"baidu_id" : 15,
+		"baidu_code" : "el",
+		"baidu_name" : "希腊语"
+	},
+	{
+		"locale_id" : 38,
+		"language" : "uk",
+		"country" : "UA",
+		"variant" : "",
+		"locale_name" : "乌克兰文 (乌克兰)",
+		"baidu_id" : 11,
+		"baidu_code" : "ru",
+		"baidu_name" : "俄语"
+	},
+	{
+		"locale_id" : 39,
+		"language" : "hu",
+		"country" : "",
+		"variant" : "",
+		"locale_name" : "匈牙利文",
+		"baidu_id" : 26,
+		"baidu_code" : "hu",
+		"baidu_name" : "匈牙利语"
+	},
+	{
+		"locale_id" : 40,
+		"language" : "fr",
+		"country" : "CH",
+		"variant" : "",
+		"locale_name" : "法文 (瑞士)",
+		"baidu_id" : 7,
+		"baidu_code" : "fra",
+		"baidu_name" : "法语"
+	},
+	{
+		"locale_id" : 42,
+		"language" : "es",
+		"country" : "AR",
+		"variant" : "",
+		"locale_name" : "西班牙文 (阿根廷)",
+		"baidu_id" : 8,
+		"baidu_code" : "spa",
+		"baidu_name" : "西班牙语"
+	},
+	{
+		"locale_id" : 43,
+		"language" : "ar",
+		"country" : "EG",
+		"variant" : "",
+		"locale_name" : "阿拉伯文 (埃及)",
+		"baidu_id" : 10,
+		"baidu_code" : "ara",
+		"baidu_name" : "阿拉伯语"
+	},
+	{
+		"locale_id" : 44,
+		"language" : "ja",
+		"country" : "JP",
+		"variant" : "JP",
+		"locale_name" : "日文 (日本,JP)",
+		"baidu_id" : 5,
+		"baidu_code" : "jp",
+		"baidu_name" : "日语"
+	},
+	{
+		"locale_id" : 45,
+		"language" : "es",
+		"country" : "SV",
+		"variant" : "",
+		"locale_name" : "西班牙文 (萨尔瓦多)",
+		"baidu_id" : 8,
+		"baidu_code" : "spa",
+		"baidu_name" : "西班牙语"
+	},
+	{
+		"locale_id" : 46,
+		"language" : "pt",
+		"country" : "BR",
+		"variant" : "",
+		"locale_name" : "葡萄牙文 (巴西)",
+		"baidu_id" : 12,
+		"baidu_code" : "pt",
+		"baidu_name" : "葡萄牙语"
+	},
+	{
+		"locale_id" : 47,
+		"language" : "be",
+		"country" : "",
+		"variant" : "",
+		"locale_name" : "白俄罗斯文",
+		"baidu_id" : 11,
+		"baidu_code" : "ru",
+		"baidu_name" : "俄语"
+	},
+	{
+		"locale_id" : 49,
+		"language" : "cs",
+		"country" : "CZ",
+		"variant" : "",
+		"locale_name" : "捷克文 (捷克共和国)",
+		"baidu_id" : 22,
+		"baidu_code" : "cs",
+		"baidu_name" : "捷克语"
+	},
+	{
+		"locale_id" : 50,
+		"language" : "es",
+		"country" : "",
+		"variant" : "",
+		"locale_name" : "西班牙文",
+		"baidu_id" : 8,
+		"baidu_code" : "spa",
+		"baidu_name" : "西班牙语"
+	},
+	{
+		"locale_id" : 51,
+		"language" : "pl",
+		"country" : "PL",
+		"variant" : "",
+		"locale_name" : "波兰文 (波兰)",
+		"baidu_id" : 17,
+		"baidu_code" : "pl",
+		"baidu_name" : "波兰语"
+	},
+	{
+		"locale_id" : 53,
+		"language" : "ca",
+		"country" : "ES",
+		"variant" : "",
+		"locale_name" : "加泰罗尼亚文 (西班牙)",
+		"baidu_id" : 8,
+		"baidu_code" : "spa",
+		"baidu_name" : "西班牙语"
+	},
+	{
+		"locale_id" : 58,
+		"language" : "es",
+		"country" : "ES",
+		"variant" : "",
+		"locale_name" : "西班牙文 (西班牙)",
+		"baidu_id" : 8,
+		"baidu_code" : "spa",
+		"baidu_name" : "西班牙语"
+	},
+	{
+		"locale_id" : 59,
+		"language" : "es",
+		"country" : "CO",
+		"variant" : "",
+		"locale_name" : "西班牙文 (哥伦比亚)",
+		"baidu_id" : 8,
+		"baidu_code" : "spa",
+		"baidu_name" : "西班牙语"
+	},
+	{
+		"locale_id" : 60,
+		"language" : "bg",
+		"country" : "BG",
+		"variant" : "",
+		"locale_name" : "保加利亚文 (保加利亚)",
+		"baidu_id" : 18,
+		"baidu_code" : "bul",
+		"baidu_name" : "保加利亚语"
+	},
+	{
+		"locale_id" : 62,
+		"language" : "fr",
+		"country" : "",
+		"variant" : "",
+		"locale_name" : "法文",
+		"baidu_id" : 7,
+		"baidu_code" : "fra",
+		"baidu_name" : "法语"
+	},
+	{
+		"locale_id" : 63,
+		"language" : "ja",
+		"country" : "",
+		"variant" : "",
+		"locale_name" : "日文",
+		"baidu_id" : 5,
+		"baidu_code" : "jp",
+		"baidu_name" : "日语"
+	},
+	{
+		"locale_id" : 66,
+		"language" : "es",
+		"country" : "PY",
+		"variant" : "",
+		"locale_name" : "西班牙文 (巴拉圭)",
+		"baidu_id" : 8,
+		"baidu_code" : "spa",
+		"baidu_name" : "西班牙语"
+	},
+	{
+		"locale_id" : 67,
+		"language" : "de",
+		"country" : "",
+		"variant" : "",
+		"locale_name" : "德文",
+		"baidu_id" : 13,
+		"baidu_code" : "de",
+		"baidu_name" : "德语"
+	},
+	{
+		"locale_id" : 68,
+		"language" : "es",
+		"country" : "EC",
+		"variant" : "",
+		"locale_name" : "西班牙文 (厄瓜多尔)",
+		"baidu_id" : 8,
+		"baidu_code" : "spa",
+		"baidu_name" : "西班牙语"
+	},
+	{
+		"locale_id" : 69,
+		"language" : "es",
+		"country" : "US",
+		"variant" : "",
+		"locale_name" : "西班牙文 (美国)",
+		"baidu_id" : 8,
+		"baidu_code" : "spa",
+		"baidu_name" : "西班牙语"
+	},
+	{
+		"locale_id" : 70,
+		"language" : "ar",
+		"country" : "SD",
+		"variant" : "",
+		"locale_name" : "阿拉伯文 (苏丹)",
+		"baidu_id" : 10,
+		"baidu_code" : "ara",
+		"baidu_name" : "阿拉伯语"
+	},
+	{
+		"locale_id" : 71,
+		"language" : "en",
+		"country" : "",
+		"variant" : "",
+		"locale_name" : "英文",
+		"baidu_id" : 2,
+		"baidu_code" : "en",
+		"baidu_name" : "英语"
+	},
+	{
+		"locale_id" : 72,
+		"language" : "ro",
+		"country" : "RO",
+		"variant" : "",
+		"locale_name" : "罗马尼亚文 (罗马尼亚)",
+		"baidu_id" : 23,
+		"baidu_code" : "rom",
+		"baidu_name" : "罗马尼亚语"
+	},
+	{
+		"locale_id" : 73,
+		"language" : "en",
+		"country" : "PH",
+		"variant" : "",
+		"locale_name" : "英文 (菲律宾)",
+		"baidu_id" : 2,
+		"baidu_code" : "en",
+		"baidu_name" : "英语"
+	},
+	{
+		"locale_id" : 75,
+		"language" : "ar",
+		"country" : "TN",
+		"variant" : "",
+		"locale_name" : "阿拉伯文 (突尼斯)",
+		"baidu_id" : 10,
+		"baidu_code" : "ara",
+		"baidu_name" : "阿拉伯语"
+	},
+	{
+		"locale_id" : 77,
+		"language" : "es",
+		"country" : "GT",
+		"variant" : "",
+		"locale_name" : "西班牙文 (危地马拉)",
+		"baidu_id" : 8,
+		"baidu_code" : "spa",
+		"baidu_name" : "西班牙语"
+	},
+	{
+		"locale_id" : 78,
+		"language" : "sl",
+		"country" : "",
+		"variant" : "",
+		"locale_name" : "斯洛文尼亚文",
+		"baidu_id" : 24,
+		"baidu_code" : "slo",
+		"baidu_name" : "斯洛文尼亚语"
+	},
+	{
+		"locale_id" : 79,
+		"language" : "ko",
+		"country" : "KR",
+		"variant" : "",
+		"locale_name" : "朝鲜文 (韩国)",
+		"baidu_id" : 6,
+		"baidu_code" : "kor",
+		"baidu_name" : "韩语"
+	},
+	{
+		"locale_id" : 80,
+		"language" : "el",
+		"country" : "CY",
+		"variant" : "",
+		"locale_name" : "希腊文 (塞浦路斯)",
+		"baidu_id" : 15,
+		"baidu_code" : "el",
+		"baidu_name" : "希腊语"
+	},
+	{
+		"locale_id" : 81,
+		"language" : "es",
+		"country" : "MX",
+		"variant" : "",
+		"locale_name" : "西班牙文 (墨西哥)",
+		"baidu_id" : 8,
+		"baidu_code" : "spa",
+		"baidu_name" : "西班牙语"
+	},
+	{
+		"locale_id" : 82,
+		"language" : "ru",
+		"country" : "RU",
+		"variant" : "",
+		"locale_name" : "俄文 (俄罗斯)",
+		"baidu_id" : 11,
+		"baidu_code" : "ru",
+		"baidu_name" : "俄语"
+	},
+	{
+		"locale_id" : 83,
+		"language" : "es",
+		"country" : "HN",
+		"variant" : "",
+		"locale_name" : "西班牙文 (洪都拉斯)",
+		"baidu_id" : 8,
+		"baidu_code" : "spa",
+		"baidu_name" : "西班牙语"
+	},
+	{
+		"locale_id" : 84,
+		"language" : "zh",
+		"country" : "HK",
+		"variant" : "",
+		"locale_name" : "中文 (香港)",
+		"baidu_id" : 27,
+		"baidu_code" : "cht",
+		"baidu_name" : "繁体中文"
+	},
+	{
+		"locale_id" : 86,
+		"language" : "hu",
+		"country" : "HU",
+		"variant" : "",
+		"locale_name" : "匈牙利文 (匈牙利)",
+		"baidu_id" : 26,
+		"baidu_code" : "hu",
+		"baidu_name" : "匈牙利语"
+	},
+	{
+		"locale_id" : 87,
+		"language" : "th",
+		"country" : "TH",
+		"variant" : "",
+		"locale_name" : "泰文 (泰国)",
+		"baidu_id" : 9,
+		"baidu_code" : "th",
+		"baidu_name" : "泰语"
+	},
+	{
+		"locale_id" : 88,
+		"language" : "ar",
+		"country" : "IQ",
+		"variant" : "",
+		"locale_name" : "阿拉伯文 (伊拉克)",
+		"baidu_id" : 10,
+		"baidu_code" : "ara",
+		"baidu_name" : "阿拉伯语"
+	},
+	{
+		"locale_id" : 89,
+		"language" : "es",
+		"country" : "CL",
+		"variant" : "",
+		"locale_name" : "西班牙文 (智利)",
+		"baidu_id" : 8,
+		"baidu_code" : "spa",
+		"baidu_name" : "西班牙语"
+	},
+	{
+		"locale_id" : 90,
+		"language" : "fi",
+		"country" : "",
+		"variant" : "",
+		"locale_name" : "芬兰文",
+		"baidu_id" : 21,
+		"baidu_code" : "fin",
+		"baidu_name" : "芬兰语"
+	},
+	{
+		"locale_id" : 91,
+		"language" : "ar",
+		"country" : "MA",
+		"variant" : "",
+		"locale_name" : "阿拉伯文 (摩洛哥)",
+		"baidu_id" : 10,
+		"baidu_code" : "ara",
+		"baidu_name" : "阿拉伯语"
+	},
+	{
+		"locale_id" : 92,
+		"language" : "ga",
+		"country" : "IE",
+		"variant" : "",
+		"locale_name" : "爱尔兰文 (爱尔兰)",
+		"baidu_id" : 2,
+		"baidu_code" : "en",
+		"baidu_name" : "英语"
+	},
+	{
+		"locale_id" : 95,
+		"language" : "et",
+		"country" : "EE",
+		"variant" : "",
+		"locale_name" : "爱沙尼亚文 (爱沙尼亚)",
+		"baidu_id" : 19,
+		"baidu_code" : "est",
+		"baidu_name" : "爱沙尼亚语"
+	},
+	{
+		"locale_id" : 96,
+		"language" : "ar",
+		"country" : "QA",
+		"variant" : "",
+		"locale_name" : "阿拉伯文 (卡塔尔)",
+		"baidu_id" : 10,
+		"baidu_code" : "ara",
+		"baidu_name" : "阿拉伯语"
+	},
+	{
+		"locale_id" : 98,
+		"language" : "pt",
+		"country" : "PT",
+		"variant" : "",
+		"locale_name" : "葡萄牙文 (葡萄牙)",
+		"baidu_id" : 12,
+		"baidu_code" : "pt",
+		"baidu_name" : "葡萄牙语"
+	},
+	{
+		"locale_id" : 99,
+		"language" : "fr",
+		"country" : "LU",
+		"variant" : "",
+		"locale_name" : "法文 (卢森堡)",
+		"baidu_id" : 7,
+		"baidu_code" : "fra",
+		"baidu_name" : "法语"
+	},
+	{
+		"locale_id" : 100,
+		"language" : "ar",
+		"country" : "OM",
+		"variant" : "",
+		"locale_name" : "阿拉伯文 (阿曼)",
+		"baidu_id" : 10,
+		"baidu_code" : "ara",
+		"baidu_name" : "阿拉伯语"
+	},
+	{
+		"locale_id" : 101,
+		"language" : "th",
+		"country" : "",
+		"variant" : "",
+		"locale_name" : "泰文",
+		"baidu_id" : 9,
+		"baidu_code" : "th",
+		"baidu_name" : "泰语"
+	},
+	{
+		"locale_id" : 103,
+		"language" : "es",
+		"country" : "DO",
+		"variant" : "",
+		"locale_name" : "西班牙文 (多米尼加共和国)",
+		"baidu_id" : 8,
+		"baidu_code" : "spa",
+		"baidu_name" : "西班牙语"
+	},
+	{
+		"locale_id" : 104,
+		"language" : "es",
+		"country" : "CU",
+		"variant" : "",
+		"locale_name" : "西班牙文 (古巴)",
+		"baidu_id" : 8,
+		"baidu_code" : "spa",
+		"baidu_name" : "西班牙语"
+	},
+	{
+		"locale_id" : 105,
+		"language" : "ar",
+		"country" : "",
+		"variant" : "",
+		"locale_name" : "阿拉伯文",
+		"baidu_id" : 10,
+		"baidu_code" : "ara",
+		"baidu_name" : "阿拉伯语"
+	},
+	{
+		"locale_id" : 106,
+		"language" : "ru",
+		"country" : "",
+		"variant" : "",
+		"locale_name" : "俄文",
+		"baidu_id" : 11,
+		"baidu_code" : "ru",
+		"baidu_name" : "俄语"
+	},
+	{
+		"locale_id" : 107,
+		"language" : "en",
+		"country" : "NZ",
+		"variant" : "",
+		"locale_name" : "英文 (新西兰)",
+		"baidu_id" : 2,
+		"baidu_code" : "en",
+		"baidu_name" : "英语"
+	},
+	{
+		"locale_id" : 109,
+		"language" : "de",
+		"country" : "CH",
+		"variant" : "",
+		"locale_name" : "德文 (瑞士)",
+		"baidu_id" : 13,
+		"baidu_code" : "de",
+		"baidu_name" : "德语"
+	},
+	{
+		"locale_id" : 110,
+		"language" : "es",
+		"country" : "UY",
+		"variant" : "",
+		"locale_name" : "西班牙文 (乌拉圭)",
+		"baidu_id" : 8,
+		"baidu_code" : "spa",
+		"baidu_name" : "西班牙语"
+	},
+	{
+		"locale_id" : 112,
+		"language" : "el",
+		"country" : "GR",
+		"variant" : "",
+		"locale_name" : "希腊文 (希腊)",
+		"baidu_id" : 15,
+		"baidu_code" : "el",
+		"baidu_name" : "希腊语"
+	},
+	{
+		"locale_id" : 114,
+		"language" : "en",
+		"country" : "ZA",
+		"variant" : "",
+		"locale_name" : "英文 (南非)",
+		"baidu_id" : 2,
+		"baidu_code" : "en",
+		"baidu_name" : "英语"
+	},
+	{
+		"locale_id" : 115,
+		"language" : "th",
+		"country" : "TH",
+		"variant" : "TH",
+		"locale_name" : "泰文 (泰国,TH)",
+		"baidu_id" : 9,
+		"baidu_code" : "th",
+		"baidu_name" : "泰语"
+	},
+	{
+		"locale_id" : 117,
+		"language" : "fr",
+		"country" : "FR",
+		"variant" : "",
+		"locale_name" : "法文 (法国)",
+		"baidu_id" : 7,
+		"baidu_code" : "fra",
+		"baidu_name" : "法语"
+	},
+	{
+		"locale_id" : 118,
+		"language" : "de",
+		"country" : "AT",
+		"variant" : "",
+		"locale_name" : "德文 (奥地利)",
+		"baidu_id" : 13,
+		"baidu_code" : "de",
+		"baidu_name" : "德语"
+	},
+	{
+		"locale_id" : 119,
+		"language" : "nl",
+		"country" : "",
+		"variant" : "",
+		"locale_name" : "荷兰文",
+		"baidu_id" : 16,
+		"baidu_code" : "nl",
+		"baidu_name" : "荷兰语"
+	},
+	{
+		"locale_id" : 121,
+		"language" : "en",
+		"country" : "AU",
+		"variant" : "",
+		"locale_name" : "英文 (澳大利亚)",
+		"baidu_id" : 2,
+		"baidu_code" : "en",
+		"baidu_name" : "英语"
+	},
+	{
+		"locale_id" : 122,
+		"language" : "vi",
+		"country" : "",
+		"variant" : "",
+		"locale_name" : "越南文",
+		"baidu_id" : 28,
+		"baidu_code" : "vie",
+		"baidu_name" : "越南语"
+	},
+	{
+		"locale_id" : 123,
+		"language" : "nl",
+		"country" : "NL",
+		"variant" : "",
+		"locale_name" : "荷兰文 (荷兰)",
+		"baidu_id" : 16,
+		"baidu_code" : "nl",
+		"baidu_name" : "荷兰语"
+	},
+	{
+		"locale_id" : 124,
+		"language" : "fr",
+		"country" : "CA",
+		"variant" : "",
+		"locale_name" : "法文 (加拿大)",
+		"baidu_id" : 7,
+		"baidu_code" : "fra",
+		"baidu_name" : "法语"
+	},
+	{
+		"locale_id" : 126,
+		"language" : "de",
+		"country" : "LU",
+		"variant" : "",
+		"locale_name" : "德文 (卢森堡)",
+		"baidu_id" : 13,
+		"baidu_code" : "de",
+		"baidu_name" : "德语"
+	},
+	{
+		"locale_id" : 127,
+		"language" : "es",
+		"country" : "CR",
+		"variant" : "",
+		"locale_name" : "西班牙文 (哥斯达黎加)",
+		"baidu_id" : 8,
+		"baidu_code" : "spa",
+		"baidu_name" : "西班牙语"
+	},
+	{
+		"locale_id" : 128,
+		"language" : "ar",
+		"country" : "KW",
+		"variant" : "",
+		"locale_name" : "阿拉伯文 (科威特)",
+		"baidu_id" : 10,
+		"baidu_code" : "ara",
+		"baidu_name" : "阿拉伯语"
+	},
+	{
+		"locale_id" : 130,
+		"language" : "ar",
+		"country" : "LY",
+		"variant" : "",
+		"locale_name" : "阿拉伯文 (利比亚)",
+		"baidu_id" : 10,
+		"baidu_code" : "ara",
+		"baidu_name" : "阿拉伯语"
+	},
+	{
+		"locale_id" : 132,
+		"language" : "it",
+		"country" : "CH",
+		"variant" : "",
+		"locale_name" : "意大利文 (瑞士)",
+		"baidu_id" : 14,
+		"baidu_code" : "it",
+		"baidu_name" : "意大利语"
+	},
+	{
+		"locale_id" : 133,
+		"language" : "da",
+		"country" : "",
+		"variant" : "",
+		"locale_name" : "丹麦文",
+		"baidu_id" : 20,
+		"baidu_code" : "dan",
+		"baidu_name" : "丹麦语"
+	},
+	{
+		"locale_id" : 134,
+		"language" : "de",
+		"country" : "DE",
+		"variant" : "",
+		"locale_name" : "德文 (德国)",
+		"baidu_id" : 13,
+		"baidu_code" : "de",
+		"baidu_name" : "德语"
+	},
+	{
+		"locale_id" : 135,
+		"language" : "ar",
+		"country" : "DZ",
+		"variant" : "",
+		"locale_name" : "阿拉伯文 (阿尔及利亚)",
+		"baidu_id" : 10,
+		"baidu_code" : "ara",
+		"baidu_name" : "阿拉伯语"
+	},
+	{
+		"locale_id" : 138,
+		"language" : "it",
+		"country" : "IT",
+		"variant" : "",
+		"locale_name" : "意大利文 (意大利)",
+		"baidu_id" : 14,
+		"baidu_code" : "it",
+		"baidu_name" : "意大利语"
+	},
+	{
+		"locale_id" : 139,
+		"language" : "en",
+		"country" : "IE",
+		"variant" : "",
+		"locale_name" : "英文 (爱尔兰)",
+		"baidu_id" : 2,
+		"baidu_code" : "en",
+		"baidu_name" : "英语"
+	},
+	{
+		"locale_id" : 140,
+		"language" : "zh",
+		"country" : "SG",
+		"variant" : "",
+		"locale_name" : "中文 (新加坡)",
+		"baidu_id" : 1,
+		"baidu_code" : "zh",
+		"baidu_name" : "中文"
+	},
+	{
+		"locale_id" : 141,
+		"language" : "ro",
+		"country" : "",
+		"variant" : "",
+		"locale_name" : "罗马尼亚文",
+		"baidu_id" : 23,
+		"baidu_code" : "rom",
+		"baidu_name" : "罗马尼亚语"
+	},
+	{
+		"locale_id" : 142,
+		"language" : "en",
+		"country" : "CA",
+		"variant" : "",
+		"locale_name" : "英文 (加拿大)",
+		"baidu_id" : 2,
+		"baidu_code" : "en",
+		"baidu_name" : "英语"
+	},
+	{
+		"locale_id" : 143,
+		"language" : "nl",
+		"country" : "BE",
+		"variant" : "",
+		"locale_name" : "荷兰文 (比利时)",
+		"baidu_id" : 16,
+		"baidu_code" : "nl",
+		"baidu_name" : "荷兰语"
+	},
+	{
+		"locale_id" : 145,
+		"language" : "pl",
+		"country" : "",
+		"variant" : "",
+		"locale_name" : "波兰文",
+		"baidu_id" : 17,
+		"baidu_code" : "pl",
+		"baidu_name" : "波兰语"
+	},
+	{
+		"locale_id" : 146,
+		"language" : "zh",
+		"country" : "CN",
+		"variant" : "",
+		"locale_name" : "中文 (中国)",
+		"baidu_id" : 1,
+		"baidu_code" : "zh",
+		"baidu_name" : "中文"
+	},
+	{
+		"locale_id" : 147,
+		"language" : "ja",
+		"country" : "JP",
+		"variant" : "",
+		"locale_name" : "日文 (日本)",
+		"baidu_id" : 5,
+		"baidu_code" : "jp",
+		"baidu_name" : "日语"
+	},
+	{
+		"locale_id" : 148,
+		"language" : "de",
+		"country" : "GR",
+		"variant" : "",
+		"locale_name" : "德文 (希腊)",
+		"baidu_id" : 13,
+		"baidu_code" : "de",
+		"baidu_name" : "德语"
+	},
+	{
+		"locale_id" : 151,
+		"language" : "en",
+		"country" : "IN",
+		"variant" : "",
+		"locale_name" : "英文 (印度)",
+		"baidu_id" : 2,
+		"baidu_code" : "en",
+		"baidu_name" : "英语"
+	},
+	{
+		"locale_id" : 152,
+		"language" : "ar",
+		"country" : "LB",
+		"variant" : "",
+		"locale_name" : "阿拉伯文 (黎巴嫩)",
+		"baidu_id" : 10,
+		"baidu_code" : "ara",
+		"baidu_name" : "阿拉伯语"
+	},
+	{
+		"locale_id" : 153,
+		"language" : "es",
+		"country" : "NI",
+		"variant" : "",
+		"locale_name" : "西班牙文 (尼加拉瓜)",
+		"baidu_id" : 8,
+		"baidu_code" : "spa",
+		"baidu_name" : "西班牙语"
+	},
+	{
+		"locale_id" : 154,
+		"language" : "zh",
+		"country" : "",
+		"variant" : "",
+		"locale_name" : "中文",
+		"baidu_id" : 1,
+		"baidu_code" : "zh",
+		"baidu_name" : "中文"
+	},
+	{
+		"locale_id" : 156,
+		"language" : "be",
+		"country" : "BY",
+		"variant" : "",
+		"locale_name" : "白俄罗斯文 (白俄罗斯)",
+		"baidu_id" : 11,
+		"baidu_code" : "ru",
+		"baidu_name" : "俄语"
+	},
+	{
+		"locale_id" : 157,
+		"language" : "sl",
+		"country" : "SI",
+		"variant" : "",
+		"locale_name" : "斯洛文尼亚文 (斯洛文尼亚)",
+		"baidu_id" : 24,
+		"baidu_code" : "slo",
+		"baidu_name" : "斯洛文尼亚语"
+	},
+	{
+		"locale_id" : 158,
+		"language" : "es",
+		"country" : "PE",
+		"variant" : "",
+		"locale_name" : "西班牙文 (秘鲁)",
+		"baidu_id" : 8,
+		"baidu_code" : "spa",
+		"baidu_name" : "西班牙语"
+	},
+	{
+		"locale_id" : 160,
+		"language" : "en",
+		"country" : "GB",
+		"variant" : "",
+		"locale_name" : "英文 (英国)",
+		"baidu_id" : 2,
+		"baidu_code" : "en",
+		"baidu_name" : "英语"
+	}
+]

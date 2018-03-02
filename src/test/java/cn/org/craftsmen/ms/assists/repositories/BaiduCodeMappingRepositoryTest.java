@@ -34,7 +34,40 @@ public class BaiduCodeMappingRepositoryTest {
 	}
 	
 	@Test
-	public void testFindByLanguageAndCountryIsNone() {
+	public void testFindByLanguageAndCountryWithNull() {
+		BaiduCodeMapping code = repo.findByLanguageAndCountry(null, "CN");
+		assertNull(code);
+		
+		code = repo.findByLanguageAndCountry("zh", null);
+		assertNull(code);
+		
+		code = repo.findByLanguageAndCountry(null, null);
+		assertNull(code);
+	}
+	
+	@Test
+	public void testFindByLanguageAndCountryWithEmpty() {
+		BaiduCodeMapping code = repo.findByLanguageAndCountry("", "CN");
+		assertNull(code);
+		
+		code = repo.findByLanguageAndCountry("zh", "");
+		assertNotNull(code);
+		
+		code = repo.findByLanguageAndCountry("", "");
+		assertNull(code);
+		
+		code = repo.findByLanguageAndCountry("  ", "CN");
+		assertNull(code);
+		
+		code = repo.findByLanguageAndCountry("zh", "  ");
+		assertNotNull(code);
+		
+		code = repo.findByLanguageAndCountry("  ", "  ");
+		assertNull(code);
+	}
+	
+	@Test
+	public void testFindByLanguageAndCountryWithUnavailableLocale() {
 		assertNotNull(repo);
 		final Locale EXPECT_LOCALE = new Locale("zh", "SINGAPORE");
 		

@@ -20,6 +20,9 @@ public interface Translator {
 	 * @param to
 	 * @return
 	 * @throws
+	 * IllegalArgumentException 
+	 * When content is null or empty
+	 * When Locale `from` or `to` is null
 	 * TranslateException 
 	 */
 	String translate(String content, Locale from, Locale to);
