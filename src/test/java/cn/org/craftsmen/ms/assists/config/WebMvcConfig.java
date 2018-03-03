@@ -5,10 +5,10 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
-@Profile("test")
-@EnableWebMvc
-@ComponentScan(basePackages= {"cn.org.craftsmen.ms.assists.web"})
-@Configuration
+//@Profile("test")
+//@EnableWebMvc
+//@ComponentScan(basePackages= {"cn.org.craftsmen.ms.assists.web"})
+//@Configuration
 public class WebMvcConfig {
 
 }

@@ -2,6 +2,9 @@ package cn.org.craftsmen.ms.assists.domain;
 
 import java.util.Locale;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class Language {
 	private String language;
 	private String country;
@@ -24,6 +27,8 @@ public class Language {
 		return country;
 	}
 	
+	@JsonIgnore
+	@JsonProperty("locale")
 	public Locale getLocale() {
 		return new Locale(language, country);
 	}
