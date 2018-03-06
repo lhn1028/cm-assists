@@ -1,6 +1,7 @@
 package cn.org.craftsmen.ms.assists.api;
 
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.List;
@@ -166,10 +167,10 @@ public class BaiduTranslator implements Translator {
 		if (null == codeTo || "".equals(codeTo.trim())) {
 			throw buildNotSupportLocaleException(to);
 		}
-		String sign = buildSign(content, SALT).toLowerCase();
 		
 		String result = null;
 		try {
+			String sign = buildSign(content, SALT).toLowerCase();
 			result = rest.getForObject(URI, String.class, content, codeFrom, codeTo, APP_ID, SALT, sign);
 			TranslateResponse res = objectMapper.readValue(result, TranslateResponse.class);
 			
@@ -203,8 +204,8 @@ public class BaiduTranslator implements Translator {
 		
 	}
 
-	public static String buildSign(String content, long salt) {
-		final String template = APP_ID + content + salt + KEY;
+	public static String buildSign(String content, long salt) throws UnsupportedEncodingException {
+		final String template = new Long(APP_ID).toString() + content + new Long(salt).toString() + KEY;
 
 		MessageDigest md;
 		try {
@@ -212,7 +213,7 @@ public class BaiduTranslator implements Translator {
 		} catch (NoSuchAlgorithmException e) {
 			return "";
 		}
-		byte[] sign = md.digest(template.getBytes());
+		byte[] sign = md.digest(template.getBytes("utf-8"));
 
 		return Hex.encodeHexString(sign);
 	}
