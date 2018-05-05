@@ -45,4 +45,4 @@ eureka:
   client:
     healthcheck: true
     serviceUrl:
-      defaultZone: http://microservice-registry:8761/eureka/
+      defaultZone: https://reg.ddkm18.com/eureka/

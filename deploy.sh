@@ -44,4 +44,4 @@ if [ -n "$image" ]; then
 fi
 
 # run app in remote docker
-docker -H $remote_docker run --name $app_name --link mongo --link mysql --link microservice-registry -d --restart=always $docker_registry/$app_name
+docker -H $remote_docker run --name $app_name TZ="Asia/Shanghai" --add-host reg.ddkm18.com:10.26.43.75 --link mongo --link mysql --link microservice-registry -d --restart=always $docker_registry/$app_name
