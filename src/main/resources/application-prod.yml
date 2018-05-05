@@ -38,9 +38,9 @@ logging:
 eureka:
   instance:
     instance-id: ${spring.application.name}:${server.port}
-    prefer-ip-address: false
-#    ip-address: 10.27.189.168
-    hostname: cm-assists.ms.ddkm18.com
+    prefer-ip-address: true
+    ip-address: 10.27.189.168
+#    hostname: cm-assists.ms.ddkm18.com
     health-check-url: http://cm-assists/info
     lease-expiration-duration-in-seconds: 5
     lease-renewal-interval-in-seconds: 5
