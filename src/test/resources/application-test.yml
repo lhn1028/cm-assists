@@ -21,4 +21,4 @@ eureka:
   client:
     register-with-eureka: false
     serviceUrl:
-      defaultZone: http://registry.ms.ddkm18.com/eureka/
+      defaultZone: http://reg.ms.ddkm18.com/eureka/
