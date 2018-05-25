@@ -32,7 +32,7 @@ import de.flapdoodle.embed.process.runtime.Network;
 @EnableMongoRepositories(basePackages= {"cn.org.craftsmen.ms.assists.repositories"})
 public class EmbeddedMongoConfig {
 	
-	private static final String DOWNLOAD_URL = "http://lib.craftsmen.org.cn/mongo/";
+	private static final String DOWNLOAD_URL = "http://files.craftsmen.org.cn/test/mongo/";
 	private static final String MONGO_DB_NAME = "assists";
 
 	@Bean
