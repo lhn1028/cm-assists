@@ -4,7 +4,7 @@ app_name=cm-assists
 docker_registry=docker.craftsmen.org.cn
 user=admin
 password=jr2015
-remote_docker=ms.ddkm18.com:61028
+remote_docker=10.73.0.214
 
 # image exist
 image=`docker images | grep $docker_registry/$app_name | awk 'NR==1{print $3}'`
@@ -44,4 +44,4 @@ if [ -n "$image" ]; then
 fi
 
 # run app in remote docker
-docker -H $remote_docker run --name $app_name -e TZ="Asia/Shanghai" --add-host reg.ddkm18.com:10.26.43.75 --link mongo --link mysql -d --restart=always $docker_registry/$app_name
+docker -H $remote_docker run --name $app_name -e TZ="Asia/Shanghai" --add-host reg.ddkm18.com:127.0.0.1 --add-host mongo:10.72.0.193 --add-host mysql:10.72.0.193 -d --restart=always $docker_registry/$app_name
