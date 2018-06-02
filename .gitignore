@@ -9,3 +9,4 @@ target/
 logs/
 .factorypath
 .apt_generated
+.vscode
