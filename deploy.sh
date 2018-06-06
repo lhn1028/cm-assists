@@ -4,7 +4,7 @@ app_name=cm-assists
 docker_registry=docker.craftsmen.org.cn
 user=admin
 password=jr2015
-remote_docker=10.73.0.214
+remote_docker=120.76.53.25
 
 # image exist
 image=`docker images | grep $docker_registry/$app_name | awk 'NR==1{print $3}'`
